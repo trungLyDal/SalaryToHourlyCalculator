@@ -6,7 +6,7 @@ import ResultCard from './ResultCard.js';
 
 function App() {
   const [results, setResults] = React.useState(null);
-  const calculatePay = (hoursWorked, hourlyRate) => {
+  const calculatePay = (hoursWorked, hourlyRate, ) => {
     const yearlyPay = hoursWorked * hourlyRate * 52; // Assuming 52 weeks in a year
     const monthlyPay = yearlyPay / 12;
     const hourlyPay = hourlyRate;
@@ -30,6 +30,7 @@ function App() {
 
         <div className='input-form'>  
         <InputForm onCalculate={calculatePay} />
+        
         {results && <ResultCard {...results} />}
         </div>
     </main>

@@ -9,6 +9,9 @@
 }
 .input-form{
   display: flex;
-  margin-top: 1vw;
-  margin-left: 1vw;
-}
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 100px;
+  font-size: large;
+  font-weight: bold;}
