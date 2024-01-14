@@ -1,0 +1,14 @@
+.App-header{
+    background-color: #80BCBD;
+    padding: 20px 20px 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    
+    
+}
+.input-form{
+  display: flex;
+  margin-top: 1vw;
+  margin-left: 1vw;
+}
