@@ -1,23 +1,28 @@
 .App-header{
-    background-color: #80BCBD;
+    background-color: #e9f0f0;
     padding: 20px 20px 20px 60px;
     border-radius: 10px;
     display: flex;
     font-size: 20px;
+    color: black;
+    border-bottom: 5px solid black; /* This sets a 2px solid black border */
+  font-weight: bold; /* This makes the border appear bold */
     
-    
+  
+}
+
+body{
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+
 }
 .input-form{
   display: flex;
   width: 400px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 5vh;
   gap: 100px;
-  font-size: large;
-  font-weight: bold;
   justify-content: center;
   padding: auto;
-  background: hsl(187 70% 85%);
+  background: hsl(189, 16%, 91%);
   --shadowColor: 187 60% 40%;
   max-width: 50rem;
   width: 100%;
@@ -30,9 +35,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
 
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s, transform 0.5s;
 }
+
+
 
 
 
@@ -60,6 +69,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
+
 }
 
 .button-56:after {
@@ -88,7 +99,11 @@
 
 .button-56:hover {
   outline: 0;
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+
 }
+
+
 
 @media (min-width: 768px) {
   .button-56 {
@@ -122,4 +137,64 @@ h2 {
   font-size: 36px;
   font-weight: 600;
   margin-top: 30px;
+}
+.card {
+  margin-top: 5vh ;
+}
+
+
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid dodgerblue;
+  padding: 10px;
+  color: #000;
+  margin-bottom: 60px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
 }

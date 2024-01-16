@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 
 const InputForm = ({onCalculate}) => {
-    const [hoursWorked, setHoursWorked] = useState(0);
-    const [hourlyRate, setHourlyRate] = useState(0);
+    const [hoursWorked, setHoursWorked] = useState(null);
+    const [hourlyRate, setHourlyRate] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -11,20 +11,23 @@ const InputForm = ({onCalculate}) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <h2>Input Your Hours Per Day:</h2>
-            <div>
-                <label>Hours Work:</label>
-                <input type="number" value={hoursWorked} onChange={(e) => setHoursWorked(e.target.value)} />
-            </div>
-            <div>
-                <label>Hourly Rate:</label>
-                <input type="number" value={hourlyRate} onChange={(e) => setHourlyRate(e.target.value)} />
-            </div>
-            <div className='button-custom'>
+        <div class="center">
+  <h1>Input Your Hours Per Day:</h1>
+  <form onSubmit={handleSubmit}>
+    <div class="inputbox">
+    <input type="number" required="required" value={hoursWorked} onChange={(e) => setHoursWorked(e.target.value)} />
+      <span>Work Hours</span>
+    </div>
+    <div class="inputbox">
+       <input type="number" required="required" value={hourlyRate} onChange={(e) => setHourlyRate(e.target.value)} />
+      <span>Hourly Rate</span>
+    </div>
+    <div className='button-custom'>
                 <button className='button-56' type="submit">Calculate</button>
-            </div>
-        </form>
+    </div>
+  </form>
+</div>
+        
     )
 }
 export default InputForm;
