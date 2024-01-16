@@ -22,14 +22,11 @@ body{
   gap: 100px;
   justify-content: center;
   padding: auto;
-  background: hsl(189, 16%, 91%);
   --shadowColor: 187 60% 40%;
   max-width: 50rem;
   width: 100%;
-  box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
-	border-radius: 0.8rem;
+  
   overflow: hidden;
-  border: 0.5rem solid;
   width: 50%; /* Adjust the width based on your design */
     margin: 0 auto; /* Center the container horizontally */
     position: absolute;
@@ -123,13 +120,7 @@ body{
 main{
   color: #000;
 }
-form {
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 500px;
-  padding: 20px;
-  width: 320px;
-}
+
 
 h2 {
   color: #080808;
@@ -140,6 +131,7 @@ h2 {
 }
 .card {
   margin-top: 5vh ;
+  
 }
 
 
@@ -148,6 +140,8 @@ h2 {
   padding: 50px 50px;
   background: #fff;
   border-radius: 10px;
+  box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
 }
 .center h1 {
   font-size: 2em;
