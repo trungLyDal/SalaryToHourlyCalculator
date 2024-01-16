@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './App.css';
 
 const InputForm = ({onCalculate}) => {
     const [hoursWorked, setHoursWorked] = useState(0);
@@ -20,8 +21,8 @@ const InputForm = ({onCalculate}) => {
                 <label>Hourly Rate:</label>
                 <input type="number" value={hourlyRate} onChange={(e) => setHourlyRate(e.target.value)} />
             </div>
-            <div>
-                <button type="submit">Calculate</button>
+            <div className='button-custom'>
+                <button className='button-56' type="submit">Calculate</button>
             </div>
         </form>
     )

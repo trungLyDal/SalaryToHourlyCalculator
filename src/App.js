@@ -32,8 +32,9 @@ function App() {
         <div className='input-form'>  
         <InputForm onCalculate={calculatePay} />
         
+       
         {results && <ResultCard {...results} />}
-        </div>
+       </div>
     </main>
 
     

@@ -3,7 +3,7 @@ import React from 'react';
 
 const ResultCard = ({ yearlyPay, monthlyPay, weeklyPay, dailyPay }) => {
   return (
-    <div>
+    <div className='card'>
       <h2>Salary Breakdown</h2>
       <p>Yearly Pay: ${yearlyPay}</p>
       <p>Monthly Pay: ${monthlyPay}</p>
