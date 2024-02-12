@@ -12,7 +12,7 @@ const InputForm = ({onCalculate}) => {
 
     return (
         <div class="center">
-  <h1>Input Your Hours Per Day:</h1>
+  <h1>Input Your Hours:</h1>
   <form onSubmit={handleSubmit}>
     <div class="inputbox">
     <input type="number" required="required" value={hoursWorked} onChange={(e) => setHoursWorked(e.target.value)} />
